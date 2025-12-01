@@ -1,0 +1,5 @@
+curl -Lf0 'https://airflow.apache.org/docs/apache-airflow/2.8.4/docker-compose.yaml' -o 'docker-compose.yaml'
+
+docker compose build 
+
+docker compose up airflow-init
