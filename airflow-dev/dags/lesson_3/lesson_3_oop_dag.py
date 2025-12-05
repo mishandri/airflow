@@ -30,7 +30,7 @@ with DAG(
 
     python_test_2 = PythonOperator(
         task_id='python_test_2',
-        python_callable=python_test_2_func,
+        python_callable=python_test_2_func
     )
 
     start_dag >> python_test >> python_test_2 >> end_dag
