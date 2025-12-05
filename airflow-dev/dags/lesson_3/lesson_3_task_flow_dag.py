@@ -5,7 +5,7 @@ from datetime import datetime
 @dag(
    dag_id="lesson_3_task_flow_dag",
    start_date=datetime(2024, 9, 1),
-   schedule='@once',
+   schedule='@once'
 )
 def lesson_3_task_flow_dag():
 
