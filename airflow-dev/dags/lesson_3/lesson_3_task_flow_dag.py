@@ -9,7 +9,7 @@ from datetime import datetime
 )
 def lesson_3_task_flow_dag():
 
-   @task()
+   @task
    def python_test():
       return datetime.now()
    
@@ -19,3 +19,5 @@ def lesson_3_task_flow_dag():
 
    date = python_test()
    python_2_test(date)
+
+dag_object = lesson_3_task_flow_dag()
